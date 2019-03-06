@@ -3,12 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import {PureCompo, PureCompoProps} from './components/PureCompo';
 import StateCompo from './components/StateCompo';
+import CompoCycleDeVie from './components/CompoCycleDeVie';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
+          <CompoCycleDeVie name="Eco"/>
           <PureCompo/>
           <PureCompoProps label={'Marc'} age={21}/>
           <StateCompo name={'Marc'}/>
